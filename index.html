@@ -78,6 +78,19 @@
 
         .skills>li{
             list-style-type: none; 
+            text-decoration: underline;
+        }
+        
+        ul>li{
+            text-decoration: none;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .underline > ul > li {
+            text-decoration: none; /* Remove underlining from children */
         }
 
     </style>
@@ -87,8 +100,8 @@
     <span id="nav-bar">
         <h2 onclick="$.scrollTo('#aboutme')">About Ivan</h2>
         <h2 onclick="$.scrollTo('#myprojects', 'fast')">Ivan's Projects</h2>
-        <h2 onclick="$.scrollTo('#skils', 'slow')">Ivan's Skills</h2>
-        <h2  onclick="$.scrollTo('#mycourses', 'slow')">Ivan's Courses</h2>
+        <h2 onclick="$.scrollTo('#skills', 'fast')">Ivan's Skills</h2>
+        <h2  onclick="$.scrollTo('#mycourses', 'fast')">Ivan's Courses</h2>
     </span>
 
     <h1  class = "heading" id = "aboutme">ABOUT ME</h1> 
@@ -103,7 +116,7 @@
 
     <h1 class = "heading" id="skills">Skills</h1>
     <div class = "section-content skills">
-        <li>PROGRAMMING LANGUAGES:
+        <li class = "underline">PROGRAMMING LANGUAGES:
             <ul>
                 <li>Java</li>
                 <li>Python</li>
@@ -140,7 +153,7 @@
         <li>Discrete Structures II (CS206)</li>
         <li>Data Management for Data Science (CS210)</li>
         <li>Software Methodology (CS213)</li>
-        <li>Principles of Programming Languages (CS214)</li>
+        <li>Principles of Programming Languages (CS314)</li>
     </ul>
 
 </body>
